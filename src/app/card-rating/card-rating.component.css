@@ -1,0 +1,52 @@
+.card {
+  background-color: var(--color-very-dark-blue);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  width: 335px;
+  margin: 110px 36%;
+  transition: all 0.5s ease-in-out;
+}
+
+img {
+  width: 162px;
+  height: 108px;
+}
+
+.aling {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+}
+
+span {
+  margin: 3px;
+  font-weight: 700;
+}
+
+h1.title {
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+p.rating {
+  color: var(--color-orange);
+  background-color: var(--color-dark-blue);
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+p {
+  color: var(--color-light-grey);
+  text-align: center;
+  font-weight: 700;
+}

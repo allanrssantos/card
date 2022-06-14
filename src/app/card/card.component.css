@@ -1,0 +1,96 @@
+.card {
+  background-color: var(--color-very-dark-blue);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  width: 330px;
+  transition: all 0.5s ease-in-out;
+  margin: 110px 36%;
+}
+
+.icon {
+  background-color: var(--color-dark-blue);
+  background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+
+}
+
+.question{
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+p {
+  color: var(--color-light-grey);
+}
+
+.mat-card-actions{
+  margin: 0px 0px;
+}
+
+div.btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+input.btn {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-grey);
+  border: none;
+  font-weight: 700;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+input.btn:focus {
+  background-color: var(--color-medium-grey);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+input.btn:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+div.btn-submit {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+input.btn-sub {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50px;
+  width: 21em;
+  height: 3em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input.btn-sub:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+
+
+
