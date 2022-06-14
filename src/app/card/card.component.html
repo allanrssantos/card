@@ -1,0 +1,35 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="icon">
+      <img src="/assets/img/icon-star.svg" alt="" />
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <h1 class="question">How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="btns">
+      <input mat-button id="1" class="btn" type="button" value="1" (click)="onClick(1)"/>
+      <input mat-button id="2" class="btn" type="button" value="2" (click)="onClick(2)"/>
+      <input mat-button id="3" class="btn" type="button" value="3" (click)="onClick(3)"/>
+      <input mat-button id="4" class="btn" type="button" value="4" (click)="onClick(4)"/>
+      <input mat-button id="5" class="btn" type="button" value="5" (click)="onClick(5)"/>
+    </div>
+
+  </mat-card-actions>
+  <mat-card-actions>
+    <div class="btn-submit">
+      <input
+        mat-button
+        class="btn-sub"
+        type="submit"
+        value="Submit"
+        (click)="cardRating()"
+      />
+    </div>
+  </mat-card-actions>
+</mat-card>
