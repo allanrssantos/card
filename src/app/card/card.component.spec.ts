@@ -1,23 +1,34 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { Router } from '@angular/router';
 import { CardComponent } from './card.component';
 
 describe('CardComponent', () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    const routerStub = () => ({ navigate: 'cardrating' });
+    TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [CardComponent],
+      providers: [{ provide: Router, useFactory: routerStub }]
+    });
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('can load instance', () => {
     expect(component).toBeTruthy();
   });
+
+  // describe('cardRating', () => {
+  //   it('makes expected calls', () => {
+  //     const routerStub: Router = fixture.debugElement.injector.get(Router);
+  //     spyOn(routerStub, 'navigate').and.callThrough();
+  //     component.cardRating();
+  //     fixture.autoDetectChanges();
+  //     expect(routerStub.navigate).toHaveBeenCalled();
+  //   });
+  // });
 });
