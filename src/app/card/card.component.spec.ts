@@ -22,13 +22,4 @@ describe('CardComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // describe('cardRating', () => {
-  //   it('makes expected calls', () => {
-  //     const routerStub: Router = fixture.debugElement.injector.get(Router);
-  //     spyOn(routerStub, 'navigate').and.callThrough();
-  //     component.cardRating();
-  //     fixture.autoDetectChanges();
-  //     expect(routerStub.navigate).toHaveBeenCalled();
-  //   });
-  // });
 });
